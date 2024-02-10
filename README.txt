@@ -38,6 +38,25 @@ npm install
     3. Add your credentials to the googleDriveCredentials.json file
     4. Replace YOUR_CLIENT_ID, YOUR_CLIENT_SECRET, YOUR_REDIRECT_URI, and YOUR_REFRESH_TOKEN with your actual credentials obtained from the Google Developers Console.
 
-5. Start the server by running the following command:
-npm start
+5. Prepare Test Video File:
+Make sure you have a test video file available for testing purposes. Name it test_video.mp4.
+
+6. Start the server by running the following command:
+node src/app.js
 By default, the server will run on port 3000. You can access it at http://localhost:3000.
+
+7. Test the Endpoints:
+You can use tools like Postman or cURL to test the endpoints. Make requests to the appropriate 
+endpoints for downloading and uploading video files, providing the necessary parameters (fileId, destPath, filePath, folderId).
+
+Run Tests:
+1. Run Mocha Tests:
+Execute the following command in your terminal to run the Mocha tests:
+    - npx mocha
+Mocha will execute the test file test.js and display the test results in the terminal.
+
+Verify Test Results:
+
+2. Ensure that all tests pass successfully.
+If any test fails, review the error messages to identify the cause of the failure and make 
+necessary corrections.
